@@ -46,7 +46,7 @@ const evaTextNum = document.getElementById("totaleva");   //获取评论框文�
 const submitMyReplay = document.getElementById("eva-replay");   //获取评论框发表按钮对象
 const forMoreEva = document.getElementsByClassName("more-evaluations")[0];    //获取评论板块查看更多按钮对象
 const forMoreQa = document.getElementsByClassName("more-qa")[0];    //获取问答板块更多按钮对象
-
+console.log("hahahahah")
 const CONTAINER_NUM = [3,18,10,10];
 
 const MYIMG = "./imags/87.jpg";
