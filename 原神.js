@@ -53,6 +53,7 @@ const MYIMG = "./imags/87.jpg";
 const MYNAME = "萝卜抱枕";
 
 let currentEVAPageListNode = null;
+video.currentTime = 0;
 
 class qas{         //问答内容类
     constructor(title,joinNum,viewNum,authorImg,authorName,contentImg,contentTitle,time,praiseNum,trampleNum,contentLink){
@@ -741,11 +742,11 @@ for(let i = 0; i < zoomBtn.length; i++){    //为文本显示的省略按钮绑�
 
 document.onscroll = function(){
     // 为更多信息容器设置粘滞定位
-    if(document.scrollingElement.scrollTop < 471){
+    if(document.scrollingElement.scrollTop < 562){
         moreInfo.style.top = "0";
     }
-    if(document.scrollingElement.scrollTop >= 471 && document.scrollingElement.scrollTop - 471 <= parseInt(getComputedStyle(document.getElementsByClassName("main-contents")[0]).height) - parseInt(getComputedStyle(moreInfo).height)){        //页面滚动到分界位置，改变更多信息容器的位置
-        moreInfo.style.top = document.scrollingElement.scrollTop - 471 + "px";
+    if(document.scrollingElement.scrollTop >= 562 && document.scrollingElement.scrollTop - 562 <= parseInt(getComputedStyle(document.getElementsByClassName("main-contents")[0]).height) - parseInt(getComputedStyle(moreInfo).height)){        //页面滚动到分界位置，改变更多信息容器的位置
+        moreInfo.style.top = document.scrollingElement.scrollTop - 562 + "px";
     }
     // 为中间列表容器设置粘滞定位
     if(document.scrollingElement.scrollTop < 562){
